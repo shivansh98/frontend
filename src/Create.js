@@ -12,12 +12,14 @@ import "./App.css";
 import axios from "axios";
 import FormFileInput from "react-bootstrap/FormFileInput";
 import User from "./User";
+const host = process.env.COMPONENT_BACKEND_HOST || '0.0.0.0';
+const port = process.env.COMPONENT_BACKEND_PORT || 8080;
 
 const urlGenerator = (file) => {
   return URL.createObjectURL(file);
 };
 
-const URL_ = "http://localhost:3004";
+const URL_ = `http://${host}:${port}`;
 
 const reducer = (state, action) => {
   switch (action.type) {
