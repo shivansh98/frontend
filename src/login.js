@@ -3,7 +3,10 @@ import { Form, Button, Toast, ToastBody } from "react-bootstrap";
 import axios from "axios";
 
 import User from "./User";
-const URL_ = "http://localhost:3004"; //use ngrok proxy lib for new ip////"http://69cca652.ngrok.io";
+const host = process.env.COMPONENT_BACKEND_HOST || '0.0.0.0';
+const port = process.env.COMPONENT_BACKEND_PORT || 8080;
+
+const URL_ = `http://${host}:${port}`; //use ngrok proxy lib for new ip////"http://69cca652.ngrok.io";
 
 const Login = () => {
   const [user, setUser] = useState("");
