@@ -23,28 +23,22 @@ function App() {
               }}
             />
             <Route
-              path="/user"
+              path="/#/user"
               exact
               component={() => {
                 return <User />;
               }}
             />
             <Route
-              path="/signin"
+              path="/#/signin"
               component={() => {
                 return <Login />;
               }}
             />
             <Route
-              path="/signup"
+              path="/#/signup"
               component={() => {
                 return <Create />;
-              }}
-            />
-            <Route
-              path="/user"
-              component={() => {
-                return <User />;
               }}
             />
           </Switch>
