@@ -8,8 +8,8 @@ const Navigate = ({ include }) => {
         <Image src={image} style={{ height: 20, width: 20 }} />
         DBOI Home
       </Navbar.Brand>
-      <Nav.Link href="/signup">Signup</Nav.Link>
-      <Nav.Link href="/signin">Signin</Nav.Link>
+      <Nav.Link href="/#/signup">Signup</Nav.Link>
+      <Nav.Link href="/#/signin">Signin</Nav.Link>
     </Navbar>
   );
 };
