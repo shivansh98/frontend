@@ -12,14 +12,14 @@ import "./App.css";
 import axios from "axios";
 import FormFileInput from "react-bootstrap/FormFileInput";
 import User from "./User";
-const host = process.env.COMPONENT_BACKEND_HOST || '0.0.0.0';
-const port = process.env.COMPONENT_BACKEND_PORT || 8080;
+const host = process.env.COMPONENT_BACKEND_HOST ;
+const port = process.env.COMPONENT_BACKEND_PORT;
 
 const urlGenerator = (file) => {
   return URL.createObjectURL(file);
 };
 
-const URL_ = `http://${host}:${port}`;
+const URL_ = `http://backend-telemetry-dashboard-nodejs.apps.123.252.203.195.nip.io`;
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -53,7 +53,7 @@ const Create = () => {
         <Toast.Header>
           <p>HEY ! YOU HAVE SUCCESSFULLY SIGNED UP </p>
         </Toast.Header>
-        <Button variant="outline-dark" href="/signin">
+        <Button variant="outline-dark" href="/#/signin">
           Go to SingIn to view details
         </Button>
       </Toast>
@@ -67,7 +67,7 @@ const Create = () => {
             right credentials !!!
           </p>
         </Toast.Header>
-        <Button variant="outline-dark" href="/signup">
+        <Button variant="outline-dark" href="/#/signup">
           Signup Again !
         </Button>
       </Toast>
