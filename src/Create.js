@@ -53,7 +53,7 @@ const Create = () => {
         <Toast.Header>
           <p>HEY ! YOU HAVE SUCCESSFULLY SIGNED UP </p>
         </Toast.Header>
-        <Button variant="outline-dark" href="/#/signin">
+        <Button variant="outline-dark" href="/signin">
           Go to SingIn to view details
         </Button>
       </Toast>
@@ -67,7 +67,7 @@ const Create = () => {
             right credentials !!!
           </p>
         </Toast.Header>
-        <Button variant="outline-dark" href="/#/signup">
+        <Button variant="outline-dark" href="/signup">
           Signup Again !
         </Button>
       </Toast>
