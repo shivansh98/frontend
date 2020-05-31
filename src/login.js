@@ -6,7 +6,7 @@ import User from "./User";
 const host = process.env.COMPONENT_BACKEND_HOST || '0.0.0.0';
 const port = process.env.COMPONENT_BACKEND_PORT || 8080;
 
-const URL_ = `http://${host}:${port}`; //use ngrok proxy lib for new ip////"http://69cca652.ngrok.io";
+const URL_ = "http://backend-telemetry-dashboard-nodejs.apps.123.252.203.195.nip.io";
 
 const Login = () => {
   const [user, setUser] = useState("");
@@ -57,7 +57,7 @@ const Login = () => {
         <ToastBody as="div">
           <User data={{ ...userData }} />
         </ToastBody>
-        <Button variant="outline-dark" href="/">
+        <Button variant="outline-dark" href="/#/">
           close
         </Button>
       </Toast>
@@ -71,7 +71,7 @@ const Login = () => {
             right credentials !!!
           </p>
         </Toast.Header>
-        <Button variant="outline-dark" href="/signin">
+        <Button variant="outline-dark" href="/#/signin">
           Signin Again !
         </Button>
       </Toast>
