@@ -17,7 +17,7 @@ const Login = () => {
   const handleRequest = async () => {
     try {
       const response = await axios.post(
-        `${URL_}/signin`,
+        "http://backend-telemetry-dashboard-nodejs.apps.123.252.203.195.nip.io/signin",
         { email: user, password: pass },
         {
           headers: {
@@ -28,7 +28,7 @@ const Login = () => {
       console.log({ ...response.data });
 
       try {
-        const user = await axios.get(`${URL_}/`, {
+        const user = await axios.get("http://backend-telemetry-dashboard-nodejs.apps.123.252.203.195.nip.io/", {
           headers: {
             Authorization: `Bearer ${response.data.token}`,
           },
