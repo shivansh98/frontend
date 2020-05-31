@@ -5,7 +5,7 @@ import Create from "./Create";
 import "./App.css";
 import User from "./User";
 import Navigate from "./Navigate";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Image } from "react-bootstrap";
 const image = require("./db-logo.png");
 function App() {
@@ -23,20 +23,20 @@ function App() {
               }}
             />
             <Route
-              path="/#/user"
+              path="/user"
               exact
               component={() => {
                 return <User />;
               }}
             />
             <Route
-              path="/#/signin"
+              path="/signin"
               component={() => {
                 return <Login />;
               }}
             />
             <Route
-              path="/#/signup"
+              path="/signup"
               component={() => {
                 return <Create />;
               }}
