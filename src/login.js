@@ -57,7 +57,7 @@ const Login = () => {
         <ToastBody as="div">
           <User data={{ ...userData }} />
         </ToastBody>
-        <Button variant="outline-dark" href="/#/">
+        <Button variant="outline-dark" href="/">
           close
         </Button>
       </Toast>
@@ -71,7 +71,7 @@ const Login = () => {
             right credentials !!!
           </p>
         </Toast.Header>
-        <Button variant="outline-dark" href="/#/signin">
+        <Button variant="outline-dark" href="/signin">
           Signin Again !
         </Button>
       </Toast>
