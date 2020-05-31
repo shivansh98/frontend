@@ -46,5 +46,6 @@
   "devDependencies": {
     "http-server": "^0.12.3",
     "react-scripts": "3.4.1"
-  }
+  },
+  "homepage":"."
 }
