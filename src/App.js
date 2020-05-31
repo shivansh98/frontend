@@ -5,7 +5,7 @@ import Create from "./Create";
 import "./App.css";
 import User from "./User";
 import Navigate from "./Navigate";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { Image } from "react-bootstrap";
 const image = require("./db-logo.png");
 function App() {
